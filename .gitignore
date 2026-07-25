@@ -1,2 +1,7 @@
 Dokumente/
 Bilder/
+
+# Held back until the beta wraps and we're ready to attach the real domain
+# (a tracked CNAME makes GitHub Pages redirect the github.io URL to the
+# custom domain, which isn't pointed via DNS yet)
+CNAME
