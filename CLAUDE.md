@@ -34,9 +34,14 @@ im Studio "Q7 30 – flow yoga and more".
 
 ## Offene Inhalte (noch nicht final)
 
-- Testimonials: aktuell nur Platzhalter. Nicht die Google-Bewertungen von
-  neuverbinden.de (anderes Geschäft des Betreibers) dafür verwenden — das
-  wäre irreführend, da diese Bewertungen ein anderes Business betreffen.
+- Testimonials: teils noch Platzhalter. Update 2026-07-27: Der Betreiber hat
+  bewusst entschieden, eine Google-Rezension von neuverbinden.de (seinem
+  anderen Geschäft, 1:1-Coaching) als Testimonial zu verwenden (Ute), obwohl
+  das ein anderes Business betrifft — mit expliziter Quellenangabe
+  "Google-Rezension Neuverbinden" in der Rolle/Ort-Zeile, damit klar bleibt,
+  worauf sich die Bewertung bezieht. Frühere Regel ("nicht verwenden, da
+  irreführend") ist damit für diesen einen Fall aufgehoben; bei weiteren
+  Neuverbinden-Bewertungen auf der gleichen offenen Kennzeichnung bestehen.
 - FAQ "Frage 4" in `Dokumente\Texte.txt` ist vom Nutzer bewusst leer gelassen
   (in Arbeit) — nicht überschreiben oder löschen.
 - E-Mail-Adresse für Kontaktformular-Benachrichtigungen noch offen.
