@@ -313,10 +313,23 @@ a {
 }
 
 .hero h2.display {
-  font-size: clamp(1.15rem, 2.4vw, 1.5rem);
-  color: var(--text);
-  font-weight: 600;
-  margin: 0 0 1.2rem;
+  font-size: clamp(1.3rem, 2.8vw, 1.75rem);
+  color: var(--mint-bright);
+  font-weight: 700;
+  margin: 0 0 1rem;
+  padding-bottom: 0.85rem;
+  position: relative;
+}
+
+.hero h2.display::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56px;
+  height: 3px;
+  background: var(--mint-bright);
+  border-radius: 2px;
 }
 
 .hero p {
@@ -330,7 +343,28 @@ a {
   color: var(--mint-bright);
   font-weight: 700;
   font-size: 1.3rem;
-  margin: 1.6rem 0 2.2rem;
+  margin: 1.6rem 0 0;
+}
+
+.hero-cta {
+  text-align: center;
+}
+
+.hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.5rem;
+  margin: 1.4rem 0 2rem;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.hero-facts .icon {
+  color: var(--mint-bright);
+  margin-right: 0.4rem;
 }
 
 .photo-strip {
@@ -482,6 +516,15 @@ a {
   }
 }
 
+/* fixed-height slot so photos/logos of different sizes still share one
+   center line, and the names below always start at the same offset */
+.coach-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 94px;
+}
+
 .coach-photo {
   display: block;
   width: 84px;
@@ -489,14 +532,12 @@ a {
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid var(--mint-bright);
+  flex-shrink: 0;
 }
 
-/* lead photo is bigger, so it's pulled up by half the extra size to
-   keep its center on the same line as the 84px circles */
 .coach--lead .coach-photo {
   width: 94px;
   height: 94px;
-  margin-top: -5px;
 }
 
 .coach-photo img {
@@ -550,6 +591,10 @@ a {
   font-family: "Urbanist", sans-serif;
   font-weight: 700;
   color: var(--mint-bright);
+}
+
+.statement .btn {
+  margin-top: 2rem;
 }
 
 /* Contact embed */
