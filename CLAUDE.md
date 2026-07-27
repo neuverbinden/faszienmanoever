@@ -44,7 +44,10 @@ im Studio "Q7 30 – flow yoga and more".
   Neuverbinden-Bewertungen auf der gleichen offenen Kennzeichnung bestehen.
 - FAQ "Frage 4" in `Dokumente\Texte.txt` ist vom Nutzer bewusst leer gelassen
   (in Arbeit) — nicht überschreiben oder löschen.
-- E-Mail-Adresse für Kontaktformular-Benachrichtigungen noch offen.
+- E-Mail-Adresse für Kontaktformular-Benachrichtigungen noch offen — das ist
+  keine Einstellung im Code dieser Website (das Formular ist nur ein iframe
+  von forms.app), sondern muss direkt im forms.app-Konto unter den
+  Benachrichtigungs-Einstellungen hinterlegt werden.
 
 ## Workflow
 
