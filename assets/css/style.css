@@ -346,25 +346,15 @@ a {
   margin: 1.6rem 0 0;
 }
 
-.hero-cta {
-  text-align: center;
-}
-
 .hero-facts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 0.6rem 1.5rem;
   margin: 1.4rem 0 2rem;
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--text-muted);
-}
-
-.hero-facts .icon {
-  color: var(--mint-bright);
-  margin-right: 0.4rem;
 }
 
 .photo-strip {
