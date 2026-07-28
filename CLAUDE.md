@@ -2,7 +2,7 @@
 
 Statische Landingpage (kein Build-Tool, kein Framework, kein Backend) für den
 "Fascial Maneuvers" Workshop (Human Garage), Mannheim, 30. August 2026,
-im Studio "Q7 30 – flow yoga and more".
+im Studio "G7 30 – flow yoga and more".
 
 ## Architektur-Entscheidungen (bewusst, nicht ändern ohne Rücksprache)
 
@@ -12,7 +12,13 @@ im Studio "Q7 30 – flow yoga and more".
   live unter https://neuverbinden.github.io/faszienmanoever/.
 - Buchung: Stripe Payment Link (kein eigener Server nötig), Kapazitätslimit
   wird direkt im Stripe-Dashboard über "limit number of payments" gesetzt.
-  Early-Bird-Preis wurde bewusst verschoben (aktuell nur ein fester Preis).
+  Update 2026-07-28: Early-Bird-Preis ist jetzt eingeführt (79 € bis 14.08.,
+  danach regulär 99 €) und wird in der Info-Leiste angezeigt. Das ist nur der
+  angezeigte Text — der tatsächlich von Stripe abgebuchte Betrag hängt vom
+  im Payment Link hinterlegten Preis ab. Der Betreiber muss den Preis im
+  Stripe-Dashboard selbst zum 14.08. auf 99 € umstellen (oder einen zweiten
+  Payment Link anlegen und den Link im Code austauschen), sonst laufen
+  angezeigter und tatsächlich abgebuchter Preis auseinander.
 - **Beta-Modus ist aktuell aktiv**: `robots.txt` sperrt alles, beide HTML-Seiten
   haben `<meta name="robots" content="noindex,nofollow">`, und die
   Custom-Domain `faszienmanöver.de` (Punycode `xn--faszienmanver-rmb.de`) ist

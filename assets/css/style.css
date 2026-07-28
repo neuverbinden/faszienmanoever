@@ -608,13 +608,30 @@ a {
 }
 
 /* Testimonials */
+.swipe-hint {
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin: -1.5rem 0 1.75rem;
+}
+
+/* horizontally scrollable on every screen size, so extra testimonials
+   never leave an orphan card stranded in its own row */
 .testimonials {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding-bottom: 0.5rem;
 }
 
 .testimonial-card {
+  flex: 0 0 340px;
+  scroll-snap-align: start;
   margin: 0;
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -687,8 +704,24 @@ a {
 }
 
 @media (max-width: 800px) {
+  .swipe-hint {
+    display: flex;
+  }
+
   .testimonials {
-    grid-template-columns: 1fr;
+    scroll-snap-type: x mandatory;
+    margin: 0 -1.5rem;
+    padding: 0.25rem 1.5rem 0.75rem;
+    scrollbar-width: none;
+  }
+
+  .testimonials::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial-card {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
   }
 }
 
